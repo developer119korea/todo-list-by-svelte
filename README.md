@@ -34,6 +34,7 @@ npm install
 ```
 
 3. 개발 서버 실행
+
 ```sh
 npm run dev
 ```
@@ -41,12 +42,15 @@ npm run dev
 4. 브라우저에서 `http://localhost:5173` 접속
 
 ## 빌드
+
 프로덕션 버전 빌드:
+
 ```sh
 npm run build
 ```
 
 빌드된 버전 미리보기:
+
 ```sh
 npm run preview
 ```
