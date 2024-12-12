@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Accordion, AccordionItem, Avatar } from '@skeletonlabs/skeleton';
 	import '../app.css';
 
 	interface Todo {
@@ -60,6 +61,24 @@
 
 <main class="max-w-2xl mx-auto p-4 mt-8 bg-gray-100 min-h-screen">
 	<h1 class="text-3xl font-bold text-gray-800 mb-6">미리알림</h1>
+
+    <span class="badge variant-filled">Badge</span>
+
+    <Accordion>
+        <AccordionItem open>
+            <svelte:fragment slot="lead">(icon)</svelte:fragment>
+            <svelte:fragment slot="summary">(summary)</svelte:fragment>
+            <svelte:fragment slot="content">(content)</svelte:fragment>
+        </AccordionItem>
+        <AccordionItem>
+            <svelte:fragment slot="lead">(icon)</svelte:fragment>
+            <svelte:fragment slot="summary">(summary)</svelte:fragment>
+            <svelte:fragment slot="content">(content)</svelte:fragment>
+        </AccordionItem>
+        <!-- ... -->
+    </Accordion>
+
+    <Avatar src="https://images.unsplash.com/photo-1617296538902-887900d9b592?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzExMDB8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop" width="w-32" rounded="rounded-full" />
 
 	<!-- Tab Navigation -->
 	<div class="flex mb-4">
